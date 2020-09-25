@@ -1,0 +1,33 @@
+.form p {
+  @include text(17px, 28px);
+  font-weight: 600;
+  color: $white;
+  text-align: center;
+
+  @media (max-width: $width-tablet-max) {
+    @include text(18px, 28px);
+  }
+}
+
+.form input {
+  @include text(15px, 24px);
+  font-weight: 400;
+  color: $placeholder;
+  border: 1px solid $border;
+  padding: 5px 30px;
+  background-color: $white;
+  border-radius: 4px;
+  transform: 0.3s;
+  // width: 100%;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    border: 1px solid $accent;
+    box-shadow: inset 0 0 0 1px $accent;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,43 @@
+.promo {
+  background-color: $black;
+  background-image: url("../img/bg-promo-desktop.jpg");
+  background-repeat: no-repeat;
+  min-height: 825px;
+  background-size: cover;
+}
+
+.promo__logo {
+  display: block;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.promo h1 {
+  @include text(46px, 64px);
+  font-weight: 700;
+  color: $white;
+  margin: 0;
+
+  @media (max-width: $width-tablet-max) {
+    @include text(30px, 42px);
+  }
+}
+
+.promo__text-wrapper p {
+  @include text(20px, 32px);
+  font-weight: 300;
+  color: $white;
+  margin: 0;
+
+  @media (max-width: $width-tablet-max) {
+    @include text(18px, 32px);
+  }
+}
