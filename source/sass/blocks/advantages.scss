@@ -1,0 +1,84 @@
+.advantages {
+  margin-bottom: 150px;
+}
+
+.advantages h2 {
+  @include text(30px, 30px);
+  font-weight: 600;
+  color: $title;
+  letter-spacing: -0.005em;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-left: 20px;
+
+  @media (max-width: $width-tablet-max) {
+    @include text(24px, 41px);
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.advantages__list {
+  @include no-list;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-right: 5px;
+  padding-left: 5px;
+  counter-reset: myCounter;
+
+  @media (max-width: $width-tablet-max) {
+    padding: 0 70px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    padding: 0;
+  }
+}
+
+.advantages__list li {
+  width: 263px;
+  padding-top: 63px;
+  text-align: center;
+  position: relative;
+
+  @media (max-width: $width-tablet-max) {
+    padding-top: 67px;
+    margin-bottom: 29px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    width: 100%;
+    padding-top: 65px;
+    margin-bottom: 20px;
+  }
+
+  &::after {
+    @include text(28px, 38px);
+    font-weight: 700;
+    letter-spacing: -1.27px;
+    position: absolute;
+    top: 10px;
+    left: 45%;
+    counter-increment: myCounter;
+    content: "0" counter(myCounter);
+    color: $accent;
+  }
+}
+
+.advantages__list p {
+  @include text(22px, 34px);
+  font-weight: 400;
+  color: $black;
+  letter-spacing: -0.5px;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $width-tablet-max) {
+    @include text(22px, 34px);
+  }
+
+  @media (max-width: $width-mobile-max) {
+    @include text(18px, 34px);
+  }
+}
