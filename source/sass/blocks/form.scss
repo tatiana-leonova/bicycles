@@ -3,10 +3,23 @@
   font-weight: 600;
   color: $white;
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 19px;
 
   @media (max-width: $width-tablet-max) {
     @include text(18px, 28px);
+    color: $black;
+    letter-spacing: -0.005em;
+    margin-bottom: 30px;
   }
+
+  @media (max-width: $width-mobile-max) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__row {
+  margin-bottom: 20px;
 }
 
 .form input {
@@ -14,20 +27,42 @@
   font-weight: 400;
   color: $placeholder;
   border: 1px solid $border;
-  padding: 5px 30px;
-  background-color: $white;
+  padding: 11px 30px;
   border-radius: 4px;
   transform: 0.3s;
-  // width: 100%;
+  width: 100%;
+  height: 48px;
+  transition: 0.3s;
+
+  @media (max-width: $width-tablet-max) {
+    padding: 11px 20px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    padding: 11px 25px;
+  }
 
   &:hover,
   &:focus {
-    color: $white;
     border: 1px solid $accent;
-    box-shadow: inset 0 0 0 1px $accent;
-  }
+    box-shadow: inset 0 0 0 2px $accent;
+    opacity: 0.9;
 
-  &:active {
-    opacity: 0.5;
+    &::placeholder {
+      color: $accent;
+    }
   }
+}
+
+.form input::placeholder {
+  @include text(15px, 24px);
+  font-weight: 400;
+  color: $placeholder;
+  background-color: inherit;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.form__button {
+  width: 100%;
 }

@@ -4,11 +4,84 @@
   background-repeat: no-repeat;
   min-height: 825px;
   background-size: cover;
+  background-position: top center;
+
+  @media (max-width: $width-tablet-max) {
+    min-height: 340px;
+    background-image: none;
+    background-color: $white;
+  }
+}
+
+// .promo__content-wrapper {
+//   display: flex;
+// }
+
+.promo__wrapper {
+  display: flex;
+  padding-top: 318px;
+  // padding-left: 13.8%;
+  padding-left: 200px;
+  padding-right: 2%;
+  padding-bottom: 80px;
+
+  @media (max-width: 1439px) {
+    padding-left: 13.8%;
+  }
+
+  @media (max-width: 1150px) {
+    padding-left: 10%;
+  }
+
+  @media (max-width: $width-tablet-max) {
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+}
+
+.promo__content-wrapper {
+  margin-right: 14.6%;
+
+  @media (min-width: $width-desktop-min) {
+    width: 400px;
+  }
+
+  @media (max-width: $width-tablet-max) {
+    background-color: $black;
+    background-image: url("../img/bg-promo-tablet.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: -15px;
+    margin-left: -15px;
+    min-height: 338px;
+    margin-bottom: 65px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    background-image: url("../img/bg-promo-mobile.jpg");
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .promo__logo {
   display: block;
   transition: 0.3s;
+  margin-bottom: 20px;
+
+  @media (max-width: $width-tablet-max) {
+    padding-top: 23px;
+    padding-left: 38px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    padding-top: 25px;
+    padding-left: 18px;
+  }
 
   &:hover,
   &:focus {
@@ -20,14 +93,37 @@
   }
 }
 
+.promo__text-wrapper {
+  @media (max-width: $width-tablet-max) {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    padding-bottom: 70px;
+  }
+}
+
 .promo h1 {
   @include text(46px, 64px);
   font-weight: 700;
   color: $white;
   margin: 0;
+  letter-spacing: -0.005em;
+  margin-bottom: 25px;
 
   @media (max-width: $width-tablet-max) {
     @include text(30px, 42px);
+    padding-top: 60px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 19px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    padding-top: 45px;
+    width: 70%;
   }
 }
 
@@ -36,8 +132,30 @@
   font-weight: 300;
   color: $white;
   margin: 0;
+  letter-spacing: -0.005em;
+  opacity: 0.8;
 
   @media (max-width: $width-tablet-max) {
     @include text(18px, 32px);
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    width: 85%;
+  }
+}
+
+.promo__form-wrapper {
+  width: 327px;
+
+  @media (max-width: $width-tablet-max) {
+    width: 42%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    width: 90%;
+    max-width: 420px;
   }
 }
