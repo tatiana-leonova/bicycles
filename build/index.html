@@ -71,16 +71,16 @@
       <div class="main-nav__wrapper">
         <ul>
           <li>
-            <a class="main-nav__item-link" href="#">О нас</a>
+            <a class="main-nav__item-link" href="#advantages">О нас</a>
           </li>
           <li>
-            <a class="main-nav__item-link" href="#">Виды велосипедов</a>
+            <a class="main-nav__item-link" href="#types-bicycles">Виды велосипедов</a>
           </li>
           <li>
-            <a class="main-nav__item-link" href="#">Видео про велосипеды</a>
+            <a class="main-nav__item-link" href="#video">Видео про велосипеды</a>
           </li>
           <li>
-            <a class="main-nav__item-link" href="#">Контакты</a>
+            <a class="main-nav__item-link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </div>
@@ -116,37 +116,51 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="advantages__wrapper container">
         <h2>Несколько фактов о нас</h2>
         <ol class="advantages__list">
-          <li><p>Самый широкий выбор велосипедов!</p></li>
-          <li><p>Доставка велосипедов по&nbsp;всей России!</p></li>
-          <li><p>Большой выбор крутых аксессуаров!</p></li>
-          <li><p>Профессиональные консультации!</p></li>
+          <li>
+            <p>Самый широкий выбор велосипедов!</p>
+          </li>
+          <li>
+            <p>Доставка велосипедов по&nbsp;всей России!</p>
+          </li>
+          <li>
+            <p>Большой выбор крутых аксессуаров!</p>
+          </li>
+          <li>
+            <p>Профессиональные консультации!</p>
+          </li>
         </ol>
       </div>
     </section>
 
-    <section class="types-bicycles">
-      <div class="types-bicycles__wrapper">
+    <section class="types-bicycles" id="types-bicycles">
+      <div class="types-bicycles__wrapper container">
         <h2>Виды велосипедов</h2>
-        <ul>
+        <ul class="types-bicycles__list">
           <li>
             <a class="types-bicycles__item-link" href="catalog/road-bikes">
-              <img src="" alt="Фото дорожного велосипеда">
+              <div class="types-bicycles__img-wrapper types-bicycles__img-wrapper--road">
+                <img src="img/road-bikes.jpg" width="342" height="503" alt="Фото дорожного велосипеда">
+              </div>
               <h3>Дорожный велосипед</h3>
             </a>
           </li>
           <li>
             <a class="types-bicycles__item-link" href="catalog/mountain-bikes">
-              <img src="" alt="Фото горного велосипеда">
+              <div class="types-bicycles__img-wrapper types-bicycles__img-wrapper--mountain">
+                <img src="img/mountain-bikes.jpg" width="342" height="566" alt="Фото горного велосипеда">
+              </div>
               <h3>Горный велосипед</h3>
             </a>
           </li>
           <li>
-            <a class="types-bicycles__item-link" href="catalog/kids-bicycles">
-              <img src="" alt="Фото детского велосипеда">
+            <a class="types-bicycles__item-link">
+              <div class="types-bicycles__img-wrapper types-bicycles__img-wrapper--kids">
+                <img src="img/kids-bicycles.jpg" width="342" height="513" alt="Фото детского велосипеда">
+              </div>
               <h3>Детский велосипед</h3>
             </a>
           </li>
@@ -154,8 +168,8 @@
       </div>
     </section>
 
-    <section class="video">
-      <div class="video__wrapper">
+    <section class="video" id="video">
+      <div class="video__wrapper container">
         <h2>Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video__block">
@@ -168,7 +182,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="contacts">
+        <div class="contacts" id="contacts">
           <h2>Как нас найти?</h2>
           <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
           <div class="contacts__map">
@@ -177,7 +191,7 @@
           </div>
           <div class="">
             <div class="contacts__wrapper-mail">
-              <a class="contacts__link-mail" href="puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+              <a class="contacts__link-mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
             </div>
             <div class="contacts__wrapper-phone">
               <a class="contacts__link-phone" href="tel:+749978468446">+7 (499) -784-684-46</a>

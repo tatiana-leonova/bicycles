@@ -1,5 +1,9 @@
 .advantages {
   margin-bottom: 150px;
+
+  @media (max-width: $width-tablet-max) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages h2 {
@@ -23,8 +27,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
   counter-reset: myCounter;
 
   @media (max-width: $width-tablet-max) {

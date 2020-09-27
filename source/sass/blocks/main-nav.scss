@@ -27,7 +27,7 @@
 
 .main-nav li:not(:last-child) {
   @media (min-width: $width-desktop-min) {
-    padding-right: 135px;
+    padding-right: 134px;
   }
 }
 
@@ -51,6 +51,7 @@
   &:hover,
   &:focus {
     opacity: 1;
+    color: $accent;
   }
 
   &:active {
