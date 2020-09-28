@@ -154,11 +154,18 @@
 
     <section class="video" id="video">
       <div class="video__wrapper container">
+        <div class="video__wrapper-text">
         <h2>Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        </div>
         <div class="video__block">
-          <img src="#" alt="Видео о велосипедах">
-          <button class="video__play" type="button" aria-label="Кнопка воспроизведения видео">
+          <div class="video__img-wrapper">
+          <img src="img/video-img-desktop.jpg" width="929" height="522" alt="Видео о велосипедах">
+          <button class="video__button-play" type="button" aria-label="Кнопка воспроизведения видео">
+            <svg class="video__icon-play" width="65" height="65">
+              <use xlink:href="#icon-play"></use>
+            </svg>
+            </div>
           </button>
         </div>
       </div>

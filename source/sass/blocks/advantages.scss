@@ -4,6 +4,10 @@
   @media (max-width: $width-tablet-max) {
     margin-bottom: 40px;
   }
+
+  @media (max-width: $width-tablet-max) {
+    margin-bottom: 15px;
+  }
 }
 
 .advantages h2 {
@@ -54,7 +58,7 @@
   @media (max-width: $width-mobile-max) {
     width: 100%;
     padding-top: 65px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   &::after {

@@ -1,13 +1,44 @@
 .types-bicycles {
   background-color: $background;
   padding-bottom: 125px;
+
+  @media (max-width: $width-tablet-max) {
+    padding-bottom: 23px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    padding-bottom: 15px;
+  }
+}
+
+.types-bicycles h2 {
+  @include text(30px, 30px);
+  font-weight: 600;
+  color: $title;
+  letter-spacing: -0.005em;
+  padding-top: 153px;
+  padding-right: 49px;
+  padding-left: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+
+  @media (max-width: $width-tablet-max) {
+    @include text(24px, 41px);
+    padding-top: 48px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .types-bicycles__list {
   @include no-list;
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-between;
 
   @media (max-width: 1244px) {
     justify-content: center;
@@ -17,6 +48,10 @@
 .types-bicycles__list li {
   @media (max-width: $width-tablet-max) {
     margin-bottom: 25px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    margin-bottom: 20px;
   }
 }
 
@@ -169,24 +204,6 @@
   }
 }
 
-.types-bicycles h2 {
-  @include text(30px, 30px);
-  font-weight: 600;
-  color: $title;
-  letter-spacing: -0.005em;
-  padding-top: 153px;
-  padding-right: 49px;
-  padding-left: 40px;
-  text-align: center;
-  margin-bottom: 10px;
-
-  @media (max-width: $width-tablet-max) {
-    @include text(24px, 41px);
-    padding-top: 48px;
-    margin-bottom: 30px;
-  }
-}
-
 .types-bicycles__item-link {
   text-decoration: none;
 
@@ -213,6 +230,10 @@
   transition: 0.3s;
   cursor: pointer;
   text-align: center;
+
+  @media (max-width: $width-mobile-max) {
+    margin-top: 20px;
+  }
 }
 
 .types-bicycles__img-wrapper img {
