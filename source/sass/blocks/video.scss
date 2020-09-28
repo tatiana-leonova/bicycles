@@ -1,6 +1,15 @@
 .video {
   background-image: linear-gradient(to bottom, #131314 87%, $white 87%);
-  margin-bottom: 120px;
+  margin-bottom: 143px;
+
+  @media (max-width: $width-tablet-max) {
+    background-image: linear-gradient(to bottom, #131314 81.5%, $white 81.5%);
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    background-image: linear-gradient(to bottom, #131314 87%, $white 87%);
+  }
 }
 
 .video__wrapper-text {
@@ -52,8 +61,6 @@
 }
 
 .video__img-wrapper {
-  // width: 929px;
-  // height: 522px;
   width: 76.3%;
   height: 100%;
   margin: 0 auto;
@@ -82,6 +89,7 @@
   background-color: transparent;
   border: none;
   transition: 0.3s;
+  cursor: pointer;
 
   @media (max-width: $width-tablet-max) {
     top: calc(50% - 50px);

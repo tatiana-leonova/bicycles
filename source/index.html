@@ -155,17 +155,17 @@
     <section class="video" id="video">
       <div class="video__wrapper container">
         <div class="video__wrapper-text">
-        <h2>Видео про велосипеды</h2>
-        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+          <h2>Видео про велосипеды</h2>
+          <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         </div>
         <div class="video__block">
           <div class="video__img-wrapper">
-          <img src="img/video-img-desktop.jpg" width="929" height="522" alt="Видео о велосипедах">
-          <button class="video__button-play" type="button" aria-label="Кнопка воспроизведения видео">
-            <svg class="video__icon-play" width="65" height="65">
-              <use xlink:href="#icon-play"></use>
-            </svg>
-            </div>
+            <img src="img/video-img-desktop.jpg" width="929" height="522" alt="Видео о велосипедах">
+            <button class="video__button-play" type="button" aria-label="Кнопка воспроизведения видео">
+              <svg class="video__icon-play" width="65" height="65">
+                <use xlink:href="#icon-play"></use>
+              </svg>
+          </div>
           </button>
         </div>
       </div>
@@ -174,21 +174,29 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="contacts" id="contacts">
-          <h2>Как нас найти?</h2>
-          <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+          <div class="contacts__wrapper-text container">
+            <h2>Как нас найти?</h2>
+            <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+          </div>
           <div class="contacts__map">
             <iframe class="contacts__map-iframe"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589733413226!5m2!1sru!2sru"
-              aria-label="Интерактивная карта" tabindex="0"></iframe>
-            <img src="" alt="Месторасположение магазина Moon на карте">
+              width="957" height="530" aria-label="Интерактивная карта" tabindex="0"></iframe>
+            <img src="img/map-desktop.jpg" width="957" height="530" alt="Месторасположение магазина Moon на карте">
           </div>
-          <div class="">
-            <div class="contacts__wrapper-mail">
-              <a class="contacts__link-mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-            </div>
-            <div class="contacts__wrapper-phone">
-              <a class="contacts__link-phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
-            </div>
+          <div class="contacts__wrapper-list container">
+            <a class="contacts__link-mail" href="mailto:puteshestviemechta@gmail.ru">
+              <svg width="26" height="20">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+              <span>puteshestviemechta@gmail.ru</span>
+            </a>
+            <a class="contacts__link-phone" href="tel:+749978468446">
+              <svg width="22" height="24">
+              <use xlink:href="#icon-phone"></use>
+              </svg>
+              <span>+7 (499) -784-684-46</span>
+            </a>
           </div>
         </div>
       </div>
