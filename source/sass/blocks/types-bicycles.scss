@@ -192,11 +192,16 @@
 
   &:hover,
   &:focus {
-    opacity: 0.8;
+    h3 {
+      color: $accent;
+    }
   }
 
   &:active {
-    opacity: 0.5;
+    h3 {
+      color: $black;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -208,15 +213,6 @@
   transition: 0.3s;
   cursor: pointer;
   text-align: center;
-
-  &:hover,
-  &:focus {
-    color: $accent;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
 }
 
 .types-bicycles__img-wrapper img {
@@ -227,15 +223,6 @@
   transition: 0.3s;
   cursor: pointer;
   border-radius: 10px;
-
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
 }
 
 .types-bicycles__img-wrapper {
