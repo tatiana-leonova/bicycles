@@ -2,11 +2,11 @@
   background-color: $background;
   padding-bottom: 125px;
 
-  @media (max-width: $width-tablet-max) {
+  @media (max-width: 1244px) {
     padding-bottom: 23px;
   }
 
-  @media (max-width: $width-mobile-max) {
+  @media (max-width: 1244px) {
     padding-bottom: 15px;
   }
 }
@@ -22,7 +22,7 @@
   text-align: center;
   margin-bottom: 10px;
 
-  @media (max-width: $width-tablet-max) {
+  @media (max-width: 1244px) {
     @include text(24px, 41px);
     padding-top: 48px;
     margin-bottom: 30px;
@@ -41,27 +41,39 @@
   flex-wrap: wrap;
 
   @media (max-width: 1244px) {
+    width: 90%;
+    margin: 0 auto;
     justify-content: center;
   }
 }
 
 .types-bicycles__list li {
-  @media (max-width: $width-tablet-max) {
+  @media (max-width: 1244px) {
     margin-bottom: 25px;
+    margin-right: 3%;
+  }
+
+  @media (max-width: $width-tablet-max) {
+    margin-right: 0;
+    padding-right: 47px;
   }
 
   @media (max-width: $width-mobile-max) {
+    // margin: 0 auto;
     margin-bottom: 20px;
+    padding-right: 0;
   }
 }
 
 .types-bicycles__list li:not(:nth-child(2n)) {
-  @media (max-width: 1244px) {
-    margin-right: 5%;
+  @media (max-width: $width-tablet-max) {
+    margin-right: 0;
+    padding-left: 47px;
   }
 
   @media (max-width: $width-mobile-max) {
     margin-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -85,21 +97,12 @@
   }
 
   @media (max-width: 1244px) {
-    padding-left: 25px;
-
-    &::before {
-      top: 410px;
-      left: 10px;
-      border: 15px solid $accent;
-    }
-  }
-
-  @media (max-width: $width-tablet-max) {
     padding-top: 0;
+    padding-left: 0;
 
     &::before {
-      top: 200px;
-      left: -10px;
+      top: 205px;
+      left: -45px;
       width: 127px;
       height: 127px;
     }
@@ -123,40 +126,14 @@
   position: relative;
 
   @media (max-width: 1244px) {
-    padding-top: 50px;
-    margin-left: 0;
-  }
-
-  @media (max-width: $width-tablet-max) {
     padding-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (max-width: $width-mobile-max) {
     padding: 0;
-  }
-
-  @media (min-width: 1245px) {
-    &::before {
-      position: absolute;
-      content: "";
-      top: 60px;
-      left: 0;
-      width: 47px;
-      height: 47px;
-      color: transparent;
-      border: 8px solid $accent;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 620px;
-      right: 0;
-      width: 47px;
-      height: 47px;
-      color: transparent;
-      border: 8px solid $accent;
-    }
   }
 }
 
@@ -178,10 +155,10 @@
   }
 
   @media (max-width: 1244px) {
-    padding-top: 50px;
+    margin-left: 0;
   }
 
-  @media (max-width: $width-tablet-max) {
+  @media (max-width: 1244px) {
     padding-top: 0;
 
     &::before {
@@ -190,6 +167,12 @@
       top: -18px;
       right: -25px;
       border: 12px solid $accent;
+    }
+  }
+
+  @media (max-width: $width-tablet-max) {
+    &::before {
+      right: 21px;
     }
   }
 
@@ -260,10 +243,6 @@
   &--mountain {
     height: 566px;
 
-    @media (max-width: 1244px) {
-      height: 503px;
-    }
-
     img {
       object-position: 0 0;
     }
@@ -272,16 +251,12 @@
   &--kids {
     height: 513px;
 
-    @media (max-width: 1244px) {
-      height: 503px;
-    }
-
     img {
       object-position: -50px 0;
     }
   }
 
-  @media (max-width: $width-tablet-max) {
+  @media (max-width: 1244px) {
     width: 270px;
     height: 300px;
 
@@ -307,7 +282,7 @@
       img {
         object-position: 0 -20px;
 
-        @media (max-width: $width-tablet-max) {
+        @media (max-width: 1244px) {
           object-position: 0 -10px;
         }
       }
