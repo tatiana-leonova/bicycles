@@ -1,4 +1,4 @@
-.main-nav ul {
+.main-nav__list {
   @include no-list;
   display: flex;
   flex-wrap: wrap;
@@ -15,13 +15,29 @@
   @media (max-width: $width-tablet-max) {
     flex-direction: column;
     border-bottom: none;
-    display: none;
+    width: 100%;
+    background-color: $white;
+    padding: 100px 0;
   }
 }
 
 .main-nav li {
   @media (max-width: $width-tablet-max) {
-    padding: 17px 40px 17px 16px;
+    padding: 15px 35px 15px 16px;
+    width: 100%;
+    background-color: #f8f8f8;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 40%;
+      right: 20px;
+      background-image: url("../img/icon-arrow.svg");
+      width: 8px;
+      height: 12px;
+    }
   }
 }
 
@@ -44,8 +60,10 @@
     @include text(20px, 28px);
     font-weight: 400;
     color: $text-menu;
+    opacity: 1;
     background-color: $background-menu;
-    padding: 17px 40px 17px 16px;
+
+    // padding: 17px 40px 17px 16px;
   }
 
   &:hover,
@@ -73,6 +91,7 @@
     border: none;
     top: 0;
     right: -15px;
+    cursor: pointer;
 
     &::after {
       position: absolute;
@@ -88,5 +107,56 @@
 
   @media (max-width: $width-mobile-max) {
     right: 0;
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  @media (max-width: $width-tablet-max) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  @media (max-width: $width-tablet-max) {
+    display: block;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  @media (max-width: $width-tablet-max) {
+    background-color: $white;
+    z-index: 3;
+    top: 8px;
+    right: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 20px 30px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 25px;
+      top: 10px;
+      right: 20px;
+      background-image: url("../img/menu-close.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  @media (max-width: $width-tablet-max) {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__list {
+  @media (max-width: $width-tablet-max) {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
