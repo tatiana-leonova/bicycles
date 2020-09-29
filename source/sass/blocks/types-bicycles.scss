@@ -59,9 +59,9 @@
   }
 
   @media (max-width: $width-mobile-max) {
-    // margin: 0 auto;
     margin-bottom: 20px;
     padding-right: 0;
+    width: 270px;
   }
 }
 
@@ -213,6 +213,16 @@
   transition: 0.3s;
   cursor: pointer;
   text-align: center;
+  width: 342px;
+
+  @media (max-width: 1244px) {
+width: 270px;
+  }
+
+  @media (max-width: $width-tablet-max) {
+    width: 270px;
+
+  }
 
   @media (max-width: $width-mobile-max) {
     margin-top: 20px;
