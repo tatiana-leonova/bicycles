@@ -4,7 +4,7 @@
 
 .contacts__wrapper-text {
   margin: 0 auto;
-  width: 45%;
+  width: 40%;
   margin-bottom: 40px;
 
   @media (max-width: $width-tablet-max) {
@@ -45,10 +45,10 @@
 
 .contacts__map {
   margin: 0 auto;
-  width: 78.5%;
+  width: 67%;
   height: 530px;
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
 
   @media (max-width: $width-tablet-max) {
     width: 90%;
@@ -124,6 +124,7 @@
   position: relative;
   margin-right: 8.5%;
   padding-left: 30px;
+  display: block;
 
   svg {
     position: absolute;

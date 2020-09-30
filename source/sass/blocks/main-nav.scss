@@ -34,7 +34,7 @@
       content: "";
       top: 40%;
       right: 20px;
-      background-image: url("../img/icon-arrow.svg");
+      background-image: url("../img/arrow.svg");
       width: 8px;
       height: 12px;
     }
@@ -62,8 +62,6 @@
     color: $text-menu;
     opacity: 1;
     background-color: $background-menu;
-
-    // padding: 17px 40px 17px 16px;
   }
 
   &:hover,

@@ -9,6 +9,14 @@
   @media (max-width: 1244px) {
     padding-bottom: 15px;
   }
+
+  @media (max-width: $width-tablet-max) {
+    padding-bottom: 22px;
+  }
+
+    @media (max-width: $width-mobile-max) {
+    padding-bottom: 15px;
+  }
 }
 
 .types-bicycles h2 {
@@ -130,6 +138,30 @@
     margin-left: 0;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  @media (min-width: 1245px) {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 620px;
+      right: 0;
+      width: 47px;
+      height: 47px;
+      color: transparent;
+      border: 10px solid $accent;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 55px;
+      left: 0;
+      width: 47px;
+      height: 47px;
+      color: transparent;
+      border: 10px solid $accent;
+    }
   }
 
   @media (max-width: $width-mobile-max) {

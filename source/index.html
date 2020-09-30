@@ -13,34 +13,6 @@
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 
-  <!-- Pixel Glass -->
-  <!-- <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* Desktop layout by default */
-      background-image: url("img/pg-desktop.jpg");
-    }
-
-    /* Tablet */
-    @media (max-width: 1023px) {
-      HTML {
-        /* Tablet layout */
-        background-image: url("img/pg-tablet.jpg");
-      }
-    }
-
-    /* Mobile */
-    @media (max-width: 767px) {
-      HTML {
-        /* Desktop layout */
-        background-image: url("img/pg-mobile.jpg");
-      }
-    }
-  </style>
-<link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
-<script src="https://yoksel.github.io/pixel-glass-js/script.js"></script> -->
-  <!-- // Pixel Glass -->
 </head>
 
 <body>
@@ -52,7 +24,6 @@
   <header class="page-header">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-      <!-- <div class="main-nav__wrapper"> -->
       <ul class="main-nav__list">
         <li>
           <a class="main-nav__item-link" href="#advantages">О нас</a>
@@ -67,7 +38,6 @@
           <a class="main-nav__item-link" href="#contacts">Контакты</a>
         </li>
       </ul>
-      <!-- </div> -->
     </nav>
   </header>
 
@@ -128,7 +98,13 @@
           <li>
             <a class="types-bicycles__item-link" href="catalog/road-bikes">
               <div class="types-bicycles__img-wrapper types-bicycles__img-wrapper--road">
-                <img src="img/road-bikes.jpg" width="342" height="503" alt="Фото дорожного велосипеда">
+                <picture>
+                  <!-- 1х: 1504px; 2x: 3008px -->
+                  <source type="image/webp" srcset="img/road-bikes.webp 1x, img/road-bikes@2x.webp 2x">
+                  <!-- 1х: 1504px; 2x: 3008px -->
+                  <img src="img/road-bikes.jpg" srcset="img/road-bikes@2x.jpg 2x" width="342" height="503"
+                    alt="Фото дорожного велосипеда">
+                </picture>
               </div>
               <h3>Дорожный велосипед</h3>
             </a>
@@ -136,7 +112,14 @@
           <li>
             <a class="types-bicycles__item-link" href="catalog/mountain-bikes">
               <div class="types-bicycles__img-wrapper types-bicycles__img-wrapper--mountain">
-                <img src="img/mountain-bikes.jpg" width="342" height="566" alt="Фото горного велосипеда">
+
+                <picture>
+                  <!-- 1х: 2236px; 2x: 4472px -->
+                  <source type="image/webp" srcset="img/mountain-bikes.webp 1x, img/mountain-bikes@2x.webp 2x">
+                  <!-- 1х: 2236px; 2x: 4472px -->
+                  <img src="img/mountain-bikes.jpg" srcset="img/mountain-bikes@2x.jpg 2x" width="342" height="566"
+                    alt="Фото горного велосипеда">
+                </picture>
               </div>
               <h3>Горный велосипед</h3>
             </a>
@@ -144,7 +127,14 @@
           <li>
             <a class="types-bicycles__item-link">
               <div class="types-bicycles__img-wrapper types-bicycles__img-wrapper--kids">
-                <img src="img/kids-bicycles.jpg" width="342" height="513" alt="Фото детского велосипеда">
+
+                <picture>
+                  <!-- 1х: 1322px; 2x: 2644px -->
+                  <source type="image/webp" srcset="img/kids-bicycles.webp 1x, img/kids-bicycles@2x.webp 2x">
+                  <!-- 1х: 1322px; 2x: 2644px -->
+                  <img src="img/kids-bicycles.jpg" srcset="img/kids-bicycles@2x.jpg 2x" width="342" height="513"
+                    alt="Фото детского велосипеда">
+                </picture>
               </div>
               <h3>Детский велосипед</h3>
             </a>
@@ -161,8 +151,14 @@
         </div>
         <div class="video__block">
           <div class="video__img-wrapper">
-            <img src="img/video-img.jpg" width="929" height="522" alt="Видео о велосипедах">
-            <button class="video__button-play" type="button" aria-label="Кнопка воспроизведения видео">but
+            <picture>
+              <!-- 1х: 929px; 2x: 1858px -->
+              <source type="image/webp" srcset="img/video-img.webp 1x, img/video-img@2x.webp 2x">
+              <!-- 1х: 929px; 2x: 1858px -->
+              <img src="img/video-img.jpg" srcset="img/video-img@2x.jpg 2x" width="929" height="522"
+                alt="Видео о велосипедах">
+            </picture>
+            <button class="video__button-play" type="button" aria-label="Кнопка воспроизведения видео">
               <svg class="video__icon-play" width="65" height="65">
                 <use xlink:href="#icon-play"></use>
               </svg>
@@ -184,7 +180,14 @@
           <iframe class="contacts__map-iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589733413226!5m2!1sru!2sru"
             height="530" aria-label="Интерактивная карта" tabindex="0"></iframe>
-          <img src="img/map.jpg" height="530" alt="Месторасположение магазина Moon на карте">
+
+          <picture>
+            <!-- 1х: 957px; 2x: 1914px -->
+            <source type="image/webp" srcset="img/video-img.webp 1x, img/map@2x.webp 2x">
+            <!-- 1х: 957px; 2x: 1914px -->
+            <img src="img/map.jpg" srcset="img/map@2x.jpg 2x" height="530"
+              alt="Месторасположение магазина Moon на карте">
+          </picture>
         </div>
         <div class="contacts__wrapper-list container">
           <a class="contacts__link-mail" href="mailto:puteshestviemechta@gmail.ru">
@@ -204,7 +207,7 @@
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
