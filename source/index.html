@@ -88,11 +88,12 @@
             <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
             <div class="form__row">
               <label class="visually-hidden" for="name">Поле для ввода имени</label>
-              <input type="text" name="name" id="name" placeholder="Введите Ваше Имя">
+              <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required>
             </div>
             <div class="form__row">
-              <label class="visually-hidden" for="phone">Поле для ввода номера телефона</label>
-              <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона">
+              <label class="visually-hidden" for="phone" rez>Поле для ввода номера телефона</label>
+              <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона"
+                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             </div>
             <button class="form__button button" type="submit">Подобрать велосипед мечты</button>
           </form>
