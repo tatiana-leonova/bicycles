@@ -18,8 +18,8 @@
 .promo__wrapper {
   display: flex;
   padding-top: 318px;
-  // padding-left: 13.8%;
-  padding-left: 200px;
+  padding-left: 13.8%;
+  // padding-left: 200px;
   padding-right: 2%;
   padding-bottom: 80px;
 
@@ -54,10 +54,9 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-right: -15px;
-    margin-left: -15px;
     min-height: 338px;
     margin-bottom: 65px;
+    margin-right: 0;
   }
 
   @media (max-width: $width-mobile-max) {

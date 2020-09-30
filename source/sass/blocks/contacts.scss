@@ -45,22 +45,21 @@
 
 .contacts__map {
   margin: 0 auto;
-  padding: 0 35px;
   width: 78.5%;
   height: 530px;
   position: relative;
   margin-bottom: 24px;
 
   @media (max-width: $width-tablet-max) {
-    width: 100%;
+    width: 90%;
     height: 545px;
     margin-bottom: 17px;
-    padding: 0 30px;
   }
 
   @media (max-width: $width-mobile-max) {
     height: 250px;
     padding: 0;
+    width: 100%;
     margin-bottom: 25px;
   }
 }
