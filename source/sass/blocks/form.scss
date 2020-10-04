@@ -63,6 +63,26 @@
   transition: 0.3s;
 }
 
-.form__button {
+.form button {
+  @include text(15px, 21px);
+  font-weight: 600;
+  color: $black;
+  background-color: $accent;
   width: 100%;
+  padding: 15px 25px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    color: $white;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
