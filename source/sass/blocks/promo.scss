@@ -88,12 +88,14 @@
 
   @media (max-width: $width-tablet-max) {
     padding-top: 23px;
-    padding-left: 38px;
+    padding-left: 23px;
+    width: 130px;
   }
 
   @media (max-width: $width-mobile-max) {
     padding-top: 25px;
     padding-left: 18px;
+    width: 90px;
   }
 
   &:hover,

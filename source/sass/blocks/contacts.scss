@@ -6,14 +6,17 @@
   margin: 0 auto;
   width: 40%;
   margin-bottom: 40px;
+  padding-left: 18px;
 
   @media (max-width: $width-tablet-max) {
     width: 95%;
     margin-bottom: 20px;
+    padding-left: 0;
   }
 
   @media (max-width: $width-mobile-max) {
     width: 90%;
+    padding-left: 12px;
   }
 }
 
@@ -81,9 +84,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-left: 190px;
+  padding-right: 210px;
+
+  @media (max-width: $width-tablet-max) {
+    padding-left: 90px;
+    padding-right: 110px;
+  }
 
   @media (max-width: $width-mobile-max) {
-    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.contacts__wrapper-list a:nth-child(2n-1) {
+  margin-right: 80px;
+
+  @media (max-width: 542px) {
+    margin-right: 0;
   }
 }
 
@@ -95,7 +113,7 @@
   transition: 0.3s;
 
   @media (max-width: $width-mobile-max) {
-    margin: 0 auto;
+    margin-bottom: 15px;
   }
 
   svg {
@@ -123,37 +141,47 @@
 .contacts__link-mail {
   position: relative;
   margin-right: 8.5%;
-  padding-left: 30px;
+  padding-left: 47px;
   display: block;
 
   svg {
     position: absolute;
     top: 7px;
-    left: -11px;
+    left: 5px;
   }
 
   @media (max-width: $width-tablet-max) {
-    margin-right: 14%;
+    svg {
+      left: 9px;
+    }
   }
 
   @media (max-width: $width-mobile-max) {
     margin-right: 0;
-    margin-bottom: 15px;
 
     span {
       display: block;
-      letter-spacing: -0.998px;
     }
   }
 }
 
 .contacts__link-phone {
   position: relative;
-  padding-left: 30px;
+  padding-left: 47px;
 
   svg {
     position: absolute;
     top: 4px;
-    left: -11px;
+    left: 10px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    padding-left: 30px;
+
+    svg {
+      position: absolute;
+      top: 4px;
+      left: -9px;
+    }
   }
 }

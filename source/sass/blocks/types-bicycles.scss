@@ -36,6 +36,10 @@
     margin-bottom: 30px;
   }
 
+  @media (max-width: $width-tablet-max) {
+    padding-right: 40px;
+  }
+
   @media (max-width: $width-mobile-max) {
     margin-top: 0;
     padding-right: 0;

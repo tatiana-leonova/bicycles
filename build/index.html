@@ -7,10 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Интернет-магазин велосипедов Moon - Лига А</title>
   <meta name="description" content="Проект лендинга магазина велосипедов Moon - Лига А">
-  <link rel="preload" href="fonts/opensans-light.woff2" as="font">
-  <link rel="preload" href="fonts/opensans-regular.woff2" as="font">
-  <link rel="preload" href="fonts/opensans-semibold.woff2" as="font">
-  <link rel="preload" href="fonts/opensans-bold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans-light.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
 
 </head>
@@ -68,7 +68,7 @@
             </div>
             <div class="form__row">
               <label class="visually-hidden" for="phone">Поле для ввода номера телефона</label>
-              <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
+              <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$" required="">
             </div>
             <button type="submit">Подобрать велосипед мечты</button>
           </form>

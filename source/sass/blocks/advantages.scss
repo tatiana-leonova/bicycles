@@ -50,9 +50,21 @@
   text-align: center;
   position: relative;
 
+  @media (max-width: 1101px) {
+    width: 240px;
+  }
+
+  @media (max-width: 1024px) {
+    width: 180px;
+  }
+
   @media (max-width: $width-tablet-max) {
     padding-top: 67px;
     margin-bottom: 29px;
+  }
+
+  @media (max-width: 998px) {
+    width: 263px;
   }
 
   @media (max-width: $width-mobile-max) {
@@ -67,7 +79,7 @@
     letter-spacing: -1.27px;
     position: absolute;
     top: 10px;
-    left: 45%;
+    left: calc(50% - 15px);
     counter-increment: myCounter;
     content: "0" counter(myCounter);
     color: $accent;
