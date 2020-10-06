@@ -17,12 +17,6 @@ if (navMain && navToggle) {
   navToggle.onclick = function () {
     changeStateMenu();
     body.classList.toggle('body__js-menu');
-    // if (body.classList.contains('body__js-menu')) {
-    //   body.classList.remove('body__js-menu');
-    // } else {
-    //   body.classList.add('body__js-menu');
-    // }
-
   };
 
   changeStateMenu();
