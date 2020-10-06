@@ -117,13 +117,18 @@
 .main-nav--opened .main-nav__list {
   @media (max-width: $width-tablet-max) {
     display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
   }
 }
 
 .main-nav--opened .main-nav__toggle {
   @media (max-width: $width-tablet-max) {
     background-color: $white;
-    z-index: 3;
+    z-index: 1001;
     top: 8px;
     right: 0;
     display: block;
